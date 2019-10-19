@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Good Mood Food">
+    <meta name="keywords" content="food, recipie, recipies, food plan, food prepping, easy food, quick food, nutrients">
+    <meta name="author" content="Simon Vonheim">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Good Mood Food</title>
+    <script src="./scripts/slideshow.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="slideshow"></div>
+        <nav>
+            <ul>
+                <li><a class="active" href="./index.html">home</a></li>
+                <li><a class="" href="./featured.html">featured</a></li>
+                <li><a class="" href="./contact.html">contact</a></li>   
+            </ul>
+        </nav>       
+    </header>
+    <main>
+        <h1 class="sitetitle">Good Mood Food</h1>
+        <section class="rfinder">            
+            <form action="">
+                <h1><span>TRY </span>the Recipe Finder!</h1>
+                <input type="text" placeholder="What sounds good?" name="ingredient" id="ingredient">
+                <select id="cuisine">
+                    <option value="" selected>You can choose a cuisine</option>
+                    <option value="african">African</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="korean">Korean</option>
+                    <option value="vietnamese">Vietnamese</option>
+                    <option value="thai">Thai</option>
+                    <option value="indian">Indian</option>
+                    <option value="british">British</option>
+                    <option value="irish">Irish</option>
+                    <option value="french">French</option>
+                    <option value="italian">Italian</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="middle%20eastern">Middle Eastern</option>
+                    <option value="jewish">Jewish</option>
+                    <option value="american">American</option> 
+                    <option value="cajun">Cajun</option>
+                    <option value="southern">Southern</option>
+                    <option value="greek">Greek</option>
+                    <option value="german">German</option>
+                    <option value="nordic">Nordic</option>
+                    <option value="eastern%20eurpean">Eastern Eurpean</option>
+                    <option value="caribbean">Caribbean</option>
+                    <option value="latin%20american">Latin American</option>
+                </select>
+                <div class="rbtn">
+                    <input type="radio" name="diet" id="Regular" value="" checked>
+                    <label for="Regular">Regular</label>
+                </div>
+                <div class="rbtn">
+                    <input type="radio" name="diet" id="vegetarian" value="vegetarian">
+                    <label for="vegetarian">Vegetarian</label>
+                </div>
+                <div class="rbtn">
+                    <input type="radio" name="diet" id="vegan" value="vegan">
+                    <label for="vegan">Vegan</label>
+                </div>
+                <h3>intolerances:</h3>
+                <div class="ckbx">
+                    <label><input type="checkbox" name="intolerances" value="dairy">dairy</label>
+                    <label><input type="checkbox" name="intolerances" value="egg">egg</label>
+                    <label><input type="checkbox" name="intolerances" value="gluten">gluten</label>
+                    <label><input type="checkbox" name="intolerances" value="peanut">peanut</label>
+                    <label><input type="checkbox" name="intolerances" value="sesame">sesame</label>
+                    <label><input type="checkbox" name="intolerances" value="seafood">seafood</label>
+                    <label><input type="checkbox" name="intolerances" value="shellfish">shellfish</label></br>
+                    <label><input type="checkbox" name="intolerances" value="soy">soy</label>
+                    <label><input type="checkbox" name="intolerances" value="sulfite">sulfite</label>
+                    <label><input type="checkbox" name="intolerances" value="tree nut">treenut</label>
+                    <label><input type="checkbox" name="intolerances" value="wheat">wheat</label>
+                </div>
+                <select id="type">
+                    <option value="main%20course">Main Course</option>
+                    <option value="side%20dish">Side Dish</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="appetizer">Appetizer</option>
+                    <option value="salad">salad</option>
+                    <option value="bread">Bread</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="soup">Soup</option>
+                    <option value="beverage">Beverage</option>
+                    <option value="sauce">Souce</option>
+                    <option value="drink">Drink</option>
+                </select>
+                <input type="button" value="Find!" onclick="rFinder()">
+            </form>
+        </section>    
+        <section>
+            <div id="recipecont">      
+            </div>
+        </section>
+    </main>
+    
+    <footer id="signupcont">
+        <input type="text" id="signup" placeholder="Want our newsletter?">
+        <input type="submit" value="Sign up!" id="signupbtn">
+    </footer>
+<script src="./scripts/rfinder.js"></script>
+<script src="./scripts/redir.js"></script>
+<script src="./scripts/signup.js"></script>
+</body>
