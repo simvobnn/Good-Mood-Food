@@ -27,9 +27,13 @@ form.addEventListener("submit", (error) => {
     }
     if (errors.length > 0) {
         error.preventDefault()
-        formError.innerText = errors.join(', ')
+        formError.classList.add("invalid");
+        formError.textContent = errors.join(', ')
     }
     else {
-        alert("Thank you, message received!")
+        error.preventDefault(); // no submit due demo
+        formError.classList.add("valid");
+        formError.textContent = ("Thank you, message received!");
+        setTimeout(() => document.location.reload(true), 4000);        
     }
 })

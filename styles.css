@@ -29,9 +29,12 @@
   padding: 0;
 
 }
+
 body {
   background-color: #f1f1f1;
+
 }
+
 main {
   font-family: 'text';
   max-width: 900px;
@@ -109,7 +112,7 @@ nav a:after {
 
 nav a:hover:after {
   width: 100%;
-background: black;
+  background: black;
 
 }
 
@@ -126,7 +129,6 @@ background: black;
   background-color: #ffffff;
   border-radius: 50px;
   display: flex;
-
   
 }
 
@@ -145,6 +147,7 @@ form h1 {
   margin-bottom: 0.5em;
 
 }
+
 form h1 span {
   color:#52c234;
   
@@ -160,11 +163,53 @@ form input[type=text], select, option {
   color: black;
 
 }
+
+.contactformcont {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  flex-flow: column nowrap;
+  max-width: 500px;
+  margin: auto;
+
+}
+
+#contactform {
+  width: 300px;
+
+}
+
+#submit {
+  margin: 1em;
+  background: lightgray;
+  border: none;
+  border-radius: 20px;;
+  padding: 1em;
+  width: 30%;
+  font-family: 'text';
+  font-weight: bold;
+  margin: 1em auto;  
+
+}
+
+#submit:hover {
+  color: #ffffff;
+
+}
+
+#comment {
+  font-family: 'text';
+  border-radius: 20px;
+  padding: 0.5em;
+
+}
+
 form h3 {
   margin: auto;
   font-family: 'text';
   color: grey;
   text-transform: capitalize;
+
 }
 
 .rbtn, .ckbx {
@@ -198,14 +243,14 @@ input[type=button] {
 input[type=button]:hover {
   color: white;
   cursor: pointer;
+
 }
 
 #recipecont {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  margin-top: 2rem;
-  
+  margin-top: 2rem;  
   
 }
 
@@ -214,9 +259,9 @@ input[type=button]:hover {
   height: 280px;
   position: relative;
   margin-bottom: 1rem;
-  
-  
+
 }
+
 .recipe img {
   object-fit: cover;
   width: 100%;
@@ -259,8 +304,8 @@ input[type=button]:hover {
 .flexcont h2 {
   font-family: 'title';
   font-size: 2em;
-}
 
+}
 
 .dishheader {
   height: 50vh;
@@ -343,9 +388,7 @@ input[type=button]:hover {
 
 .inst p {
   text-align: left;
-  margin: 1em 0.3em 0 0;
-  font-weight: ;
-  
+  margin: 1em 0.3em 0 0;  
 
 }
 
@@ -389,35 +432,43 @@ footer input {
 }
 footer input:first-of-type {
   border-radius: 25px 0 0 25px;
+
 }
 
 footer input:last-of-type {
   border-radius: 0 25px 25px 0;
   
 }
+
 footer input:last-of-type:hover {
   font-weight: bold;
   
+
 }
 input, select:focus {
   outline: none;
+
 }
-.invalid::placeholder{
+
+.invalid::placeholder, .invalid {
   color:red;
+
 }
-.valid::placeholder {
+
+.valid::placeholder, .valid {
   color: #52c234;
+
 }
+
 h3 a {
   color: grey;
+
 }
+
 h3 a:hover {
   color: black;
+
 }
-
-
-
-
 
 @media screen and (min-width: 645px) {
   .list {
@@ -439,4 +490,5 @@ h3 a:hover {
   footer {
     height: 4vh;
   }
+  
 }
